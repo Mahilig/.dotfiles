@@ -1,0 +1,46 @@
+#!/usr/bin/zsh
+#
+# ~/.xprofile
+#
+# Executed by startx (run your window manager from here)
+
+# Compositor
+picom --experimental-backends -b
+
+# Handles background wallpaper
+nitrogen --restore &
+
+# KDE Connect
+kdeconnect-indicator &
+
+# Newtork Management Applet
+nm-applet &
+
+# Protonmail Bridge
+exec protonmail-bridge --no-window &
+
+# Protonmail Bridge
+#protonvpn &
+
+# Polkit for controlling system wide priveleges
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Caffeine
+caffeine -a &
+
+# Bluetooth Applet
+blueman-applet &
+
+# Export custom paths
+export PATH=$HOME/Projects/bash_scripts:$PATH
+export PATH=$HOME/.config/dwmblocks/blocks:$PATH
+
+userresources=$HOME/.Xresources
+#usermodmap=$HOME/.Xmodmap
+#sysresources=/etc/X11/xinit/.Xresources
+#sysmodmap=/etc/X11/xinit/.Xmodmap
+
+dwmblocks &
+
+# Green with envy
+#gwe --autostart-on --hide-window &
