@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/francis/.config/scripts/rofi'
+let g:netrw_dirhist_5='/home/francis/.config/scripts'
+let g:netrw_dirhist_4='/home/francis/Scripts/rofi'
+let g:netrw_dirhist_3='/home/francis/.config/dwmblocks/blocks'
+let g:netrw_dirhist_2='/etc/X11/xinit'
+let g:netrw_dirhist_1='/home/francis/.config/BraveSoftware/Brave-Browser/Default'
+let g:netrw_dirhist_0='/home/francis/.config/BraveSoftware/Brave-Browser'
+let g:netrw_dirhist_9='/home/francis/.config/BraveSoftware'
+let g:netrw_dirhist_8='/mnt/data/Projects/twitter_media_downloader/src/__pycache__'
+let g:netrw_dirhist_7='/home/aed/.config/dwmblocks/blocks'
