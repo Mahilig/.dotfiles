@@ -1,0 +1,146 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty itself.
+env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: alacritty
+
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+
+  padding:
+    x: 5
+    y: 5
+
+  # Spread additional padding evenly around the terminal content.
+  #dynamic_padding: false
+
+  decorations: full
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: DejaVuSansMono Nerd Font
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: DejaVuSansMono Nerd Font
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: DejaVuSansMono Nerd Font
+    style: Italic
+  
+  size: 11
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+  use_thin_strokes: false
+
+# Colors (Hybrid)
+colors:
+  primary:
+   background: '#27292c'
+   foreground: '#d0d2d1'
+
+  normal:
+    black:   '#27292c'
+    red:     '#b05655'
+    green:   '#769972'
+    yellow:  '#e1a574'
+    blue:    '#7693ac'
+    magenta: '#977ba0'
+    cyan:    '#749e99'
+    white:   '#848b92'
+  
+    #  bright:
+    #   black:   '#484c52'
+    #   red:     '#d27c7b'
+    #   green:   '#dffebe'
+    #   yellow:  '#f0d189'
+    #   blue:    '#96b1c9'
+    #   magenta: '#bfa5c7'
+    #   cyan:    '#9fc9c3'
+    #   white:   '#fcf7e2'
+
+
+# Bell
+bell:
+  # Values for `animation`:
+  #   - Ease
+  #   - EaseOut
+  #   - EaseOutSine
+  #   - EaseOutQuad
+  #   - EaseOutCubic
+  #   - EaseOutQuart
+  #   - EaseOutQuint
+  #   - EaseOutExpo
+  #   - EaseOutCirc
+  #   - Linear
+  animation: EaseOutExpo
+  duration: 0
+
+background_opacity: 0.8
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
+cursor:
+  style: Block
+
+#live_config_reload: true
+
+shell:
+  program: /bin/zsh
+
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+  hide_when_typing: false
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+# Key bindings
+#key_bindings:
+#  - { key: V,        mods: Control|Shift,           action: Paste            }
+#  - { key: C,        mods: Control|Shift,           action: Copy             }
+#  - { key: F,        mods: Control|Shift,           action: SearchForward    }
+#  - { key: B,        mods: Control|Shift,           action: SearchBackward   }
+#  - { key: C,        mods: Control|Shift, mode: Vi, action: ClearSelection   }
+#  - { key: Insert,   mods: Shift,                   action: PasteSelection   }
+#  - { key: Key0,     mods: Control,                 action: ResetFontSize    }
+#  - { key: Equals,   mods: Control,                 action: IncreaseFontSize }
+#  - { key: Add,      mods: Control,                 action: IncreaseFontSize }
+#  - { key: Subtract, mods: Control,                 action: DecreaseFontSize }
+#  - { key: Minus,    mods: Control,                 action: DecreaseFontSize }
