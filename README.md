@@ -1,3 +1,3 @@
-# .dotfiles
+## .dotfiles
 
-### add dwm.desktop on sessinons
+#### add dwm.desktop on sessinons
