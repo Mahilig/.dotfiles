@@ -34,6 +34,7 @@ blueman-applet &
 # Export custom paths
 export PATH=$HOME/Projects/bash_scripts:$PATH
 export PATH=$HOME/.config/dwmblocks/blocks:$PATH
+export PATH=$HOME/.config/rofi/bin:$PATH
 
 userresources=$HOME/.Xresources
 #usermodmap=$HOME/.Xmodmap
